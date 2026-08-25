@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+.chat-container {
+    width: 500px;
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.username-section,
+.message-section {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    font-size: 14px;
+}
+
+button {
+    padding: 12px 18px;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    background: #333;
+    color: white;
+}
+
+button:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
+#status {
+    text-align: center;
+    font-size: 14px;
+}
+
+.messages {
+    height: 350px;
+
+    margin: 15px 0;
+
+    padding: 10px;
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+    overflow-y: auto;
+}
+
+.message {
+    padding: 8px;
+    margin-bottom: 8px;
+
+    background: #f1f1f1;
+
+    border-radius: 5px;
+}
+
+.message strong {
+    margin-right: 5px;
+}
+.my-message {
+    background: #333;
+    color: white;
+
+    margin-left: auto;
+
+    width: fit-content;
+    max-width: 70%;
+
+    padding: 10px 14px;
+    border-radius: 12px;
+}
+
+.other-message {
+    background: #e5e5e5;
+
+    margin-right: auto;
+
+    width: fit-content;
+    max-width: 70%;
+
+    padding: 10px 14px;
+    border-radius: 12px;
+}
+
+.my-message strong,
+.other-message strong {
+    display: block;
+    margin-bottom: 4px;
+}
+.system-message {
+    text-align: center;
+    color: #777;
+    font-size: 13px;
+    margin: 10px 0;
+    font-style: italic;
+}
